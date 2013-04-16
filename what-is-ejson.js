@@ -13,23 +13,14 @@ bufferToString = function (buffer) {
 
 person = {
   name: "Chris Mather",
+
+  // Notice the value is of type "Date"
   createdAt: new Date(),
+
+  // the value is of type Uint8Array
+  // The value is just a binary version of the string "hello"
+  // You can test this in the browser by typing bufferToString(person.file)
   file: new Uint8Array([104, 101, 108, 108, 111])
 };
-
-/*****************************************************************************/
-
-/************************ Client *********************************************/
-
-if (Meteor.isClient) {
-}
-
-/*****************************************************************************/
-
-
-/************************ Server *********************************************/
-
-if (Meteor.isServer) {
-}
 
 /*****************************************************************************/
